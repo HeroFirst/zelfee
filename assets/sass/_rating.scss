@@ -1,0 +1,144 @@
+.rating-page{
+}
+
+.rating-content{
+  h1.rating-title{
+    @extend .font-avenir-demi-bold;
+
+    margin: 0;
+    color: #474747;
+    font-size: 18px;
+    line-height: 13px;
+  }
+
+  .rating-table{
+    .row-1{
+      width: 55px;
+    }
+
+    .row-3{
+      margin-left: auto;
+      width: 95px;
+    }
+
+    .rating-table-head{
+      display: flex;
+      align-content: center;
+      border-bottom: #eeeeee 1px solid;
+
+      color: #979797;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 14px;
+
+      .row-1, .row-2, .row3{
+        padding: 15px 0;
+      }
+
+      .row-1, .row-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .row-2{
+        padding-left: 80px;
+      }
+
+    }
+
+    .rating-table-body{
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+
+      .rating-table-item{
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+        width: 100%;
+        border-bottom: #eeeeee 1px solid;
+
+        &:first-child{
+          background-color: #f3f3f3;
+          background-image: linear-gradient(to top, #2eefa0 0%, #19f6cc 100%);
+          border-radius: 4px;
+
+          .text{
+            .subtitle{
+              color: #ffffff;
+            }
+          }
+        }
+      }
+
+      .number{
+        color: #979797;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+      }
+
+      .balls{
+        color: #474747;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+      }
+
+      .avatar{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #eeeeee;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .text{
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .title{
+          @extend .font-avenir-demi-bold;
+
+          color: #474747;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 13px;
+        }
+
+        .subtitle{
+          margin-top: 5px;
+          color: #979797;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 14px;
+        }
+      }
+
+      .row-1, .row-2, .row3{
+        padding: 10px 0;
+      }
+
+      .row-2, .row-3{
+        border-left: #eeeeee 1px solid;
+      }
+
+      .row-1, .row-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .row-2{
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+        padding: 10px 10px;
+      }
+    }
+  }
+}

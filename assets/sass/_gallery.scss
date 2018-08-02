@@ -1,0 +1,50 @@
+.modal-gallery{
+  height: 70vh;
+
+  .carousel.slide{
+    height: 100%;
+
+    .carousel-inner{
+      height: 100%;
+
+      .item{
+        width: 100%;
+        height: 100%;
+
+        div.gallery-img{
+          background-size: cover;
+          background-position: center;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .carousel-control{
+      width: 10%;
+      background: rgba(0,0,0,0) !important;
+
+      &:hover{
+        background: rgba(0,0,0,0.3) !important;
+      }
+
+      &.left{
+        span.glyphicon{
+          margin-left: -20px;
+        }
+      }
+
+      &.right{
+        span.glyphicon{
+          margin-right: -25px;
+        }
+      }
+
+      span.glyphicon{
+        height: 50px;
+        width: 50px;
+
+      }
+    }
+  }
+}

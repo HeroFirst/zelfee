@@ -1,0 +1,25 @@
+#modalAuth{
+  .form-group{
+    label{
+      &.control-label{
+        margin-bottom: 0;
+        line-height: 34px;
+      }
+    }
+  }
+
+  .register-social-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .register-social-item{
+      &:nth-child(n+2){
+        margin-left: 30px;
+      }
+
+      width: 34px;
+      height: 34px;
+    }
+  }
+}

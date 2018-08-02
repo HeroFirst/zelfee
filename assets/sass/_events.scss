@@ -1,0 +1,222 @@
+.icon-category{
+  position: absolute;
+  width: 68px;
+  height: 34px;
+  background-color: #ea4335;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.icon-category-hot{
+    background-color: red;
+
+    &:before{
+      height: 24px;
+      width: auto;
+      content: url(/assets/images/icon_events_hot.png);
+    }
+  }
+
+  &.icon-category-star{
+    background-color: #ea4335;
+
+    &:before{
+      height: 23px;
+      width: auto;
+      content: url(/assets/images/icon_events_star.png);
+    }
+  }
+
+  &.icon-category-sport{
+    background-color: #40d671;
+
+    &:before{
+      height: 23px;
+      width: auto;
+      content: url(/assets/images/icon_events_sport.png);
+    }
+  }
+
+  &.icon-category-equipment{
+    background-color: #f2ba22;
+
+    &:before{
+      height: 16px;
+      width: auto;
+      content: url(/assets/images/icon_events_equipment.png);
+    }
+  }
+
+  &.icon-category-skype{
+
+    background-color: #12a5f4;
+
+    &:before{
+      height: 25px;
+      width: auto;
+      content: url(/assets/images/icon_events_skype.png);
+    }
+  }
+}
+
+.balls-count{
+  @extend .font-avenir-demi-bold;
+  color: white;
+  font-size: 20px;
+  background-color: #f655a0;
+  border-radius: 4px;
+  padding: 3px 8px;
+  position: absolute;
+}
+
+.events-gallery{
+  padding: 0 15px;
+
+  .square.rectangle{
+    .title-container{
+      h1{
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: inherit;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 1px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+    .title-container{
+      padding: 0 30px;
+      z-index: 1;
+
+      h1{
+        margin: 0;
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 42px;
+      }
+    }
+
+    .info-container{
+      padding: 0 30px;
+      z-index: 1;
+
+      span{
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      span + span{
+        margin-left: 30px;
+      }
+
+      span:before{
+        position: relative;
+        margin-right: 10px;
+      }
+
+      .time:before{
+        top: 1px;
+        content: url(/assets/images/icon_time.png);
+      }
+
+      .date:before{
+        top: 1px;
+        content: url(/assets/images/icon_calendar.png);
+      }
+
+      .comments:before{
+        top: 4px;
+        content: url(/assets/images/icon_comment.png);
+      }
+    }
+
+    .overlay{
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      position: absolute;
+      background: rgba(0,0,0,0);
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 49%, rgba(0,0,0,0.51) 75%, rgba(0,0,0,0.86) 93%, rgba(0,0,0,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(49%, rgba(0,0,0,0)), color-stop(75%, rgba(0,0,0,0.51)), color-stop(93%, rgba(0,0,0,0.86)), color-stop(100%, rgba(0,0,0,1)));
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 49%, rgba(0,0,0,0.51) 75%, rgba(0,0,0,0.86) 93%, rgba(0,0,0,1) 100%);
+      background: -o-linear-gradient(top, rgba(0,0,0,0) 49%, rgba(0,0,0,0.51) 75%, rgba(0,0,0,0.86) 93%, rgba(0,0,0,1) 100%);
+      background: -ms-linear-gradient(top, rgba(0,0,0,0) 49%, rgba(0,0,0,0.51) 75%, rgba(0,0,0,0.86) 93%, rgba(0,0,0,1) 100%);
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 49%, rgba(0,0,0,0.51) 75%, rgba(0,0,0,0.86) 93%, rgba(0,0,0,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+    }
+
+    .icon-category{
+      top: 30px;
+      right: 30px;
+    }
+
+    .balls-count{
+      top: 30px;
+      left: 30px;
+    }
+
+  }
+
+  .col-xs-6, .col-xs-3 {
+    padding: 0;
+  }
+}
+
+.page-events{
+  .gallery-moments{
+    padding: 0 15px;
+
+    a:hover{
+      .content{
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.zf-toggle{
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+
+  input[type=checkbox]{
+    margin-top: 0;
+    width: 62px;
+    height: 32px;
+    content: url(/assets/images/icon_toggle_normal.png);
+  }
+
+  input[type=checkbox]:hover{
+    opacity: 0.7;
+  }
+
+  input[type=checkbox]:checked{
+    content: url(/assets/images/icon_toggle_checked.png);
+  }
+
+  .label-right, .label-left{
+    color: #474747;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .label-left{
+    margin-right: 20px;
+  }
+
+  .label-right{
+    margin-left: 20px;
+  }
+}

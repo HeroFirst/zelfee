@@ -1,0 +1,227 @@
+.register-top-banner {
+  img{
+    width: 100%;
+    height:auto;
+  }
+}
+
+.form-group{
+  margin: 0;
+  padding:0;
+
+  label.control-label{
+    color: #474747;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  input{
+    color: #474747;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.has-feedback{
+  a{
+    span.form-control-feedback{
+      pointer-events: auto !important;
+    }
+  }
+}
+
+.form-control-feedback{
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  right: -15px !important;
+}
+
+.form-control{
+
+  &.bootstrap-select{
+
+    &:focus {
+      border-color: #3fd46f;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0, 255, 255, 0.2);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0, 255, 255, 0.2);
+    }
+
+    .dropup{
+      .caret{
+        color: #474747;
+        border-top: 0;
+        border-bottom: 6px dashed;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+      }
+    }
+
+    .caret{
+      color: #474747;
+      border-bottom:0;
+      border-top: 6px dashed;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+    }
+
+    .dropdown-menu{
+      li{
+        a{
+          padding: 10px 20px;
+        }
+      }
+    }
+
+    .dropdown-toggle.btn-default{
+      color: #474747;
+      font-size: 16px;
+      font-weight: 400;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    &.open>.dropdown-toggle.btn-default{
+      background-color: inherit;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .dropdown-toggle{
+      &:hover, &:focus, &:active, &.active{
+        background-color: inherit;
+      }
+
+      &:hover, &:active, &.active{
+        background-color: inherit;
+        border-color: #3fd46f;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0, 255, 255, 0.2);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0, 255, 255, 0.2);
+      }
+    }
+  }
+}
+
+.checkbox{
+  label{
+    line-height: 28px;
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #474747;
+
+    input[type=checkbox]{
+      margin-top: 0;
+      margin-left: -40px;
+      height: 28px;
+      width: 28px;
+      content: url(/assets/images/icon_checkbox_normal.png);
+    }
+
+    input[type=checkbox]:hover{
+      opacity: 0.7;
+    }
+
+    input[type=checkbox]:checked{
+      content: url(/assets/images/icon_checkbox_checked.png);
+    }
+  }
+}
+
+.register-divider{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+
+  .text{
+    padding: 10px 0;
+    color: #474747;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .line{
+    width: 1px;
+    height: 100%;
+    background-color: #474747;
+  }
+}
+
+.register-social-item{
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+
+  color: #474747;
+  font-size: 14px;
+  font-weight: 400;
+
+  .social-icon{
+    margin-left: auto;
+  }
+}
+
+.social-icon{
+  width: 68px;
+  height: 34px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover{
+    opacity: 0.9;
+  }
+
+  &-vk{
+    background-color: #4d75a3;
+
+    &:before{
+      content: url(/assets/images/icon_social_vk_white.png);
+    }
+  }
+
+  &-fb{
+    background-color: #3b5998;
+
+    &:before{
+      margin-top: 6px;
+      content: url(/assets/images/icon_social_fb_white.png);
+    }
+  }
+
+  &-ok{
+    background-color: #ed812b;
+
+    &:before{
+      margin-top: 6px;
+      content: url(/assets/images/icon_social_ok_white.png);
+    }
+  }
+
+  &-mail{
+    background-color: #0f4586;
+
+    &:before{
+      margin-top: 7px;
+      content: url(/assets/images/icon_social_mail_white.png);
+    }
+  }
+
+  &-gplus{
+    background-color: #ea4335;
+
+    &:before{
+      margin-top: 5px;
+      content: url(/assets/images/icon_social_gplus_white.png);
+    }
+  }
+}
